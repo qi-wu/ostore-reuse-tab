@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "reuse-tab": [
+        "dist/reuse-tab"
+      ],
+      "reuse-tab/*": [
+        "dist/reuse-tab/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

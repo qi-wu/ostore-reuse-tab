@@ -120,6 +120,41 @@
           }
         }
       }
+    },
+    "reuse-tab": {
+      "projectType": "library",
+      "root": "projects/reuse-tab",
+      "sourceRoot": "projects/reuse-tab/src",
+      "prefix": "",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/reuse-tab/tsconfig.lib.json",
+            "project": "projects/reuse-tab/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/reuse-tab/src/test.ts",
+            "tsConfig": "projects/reuse-tab/tsconfig.spec.json",
+            "karmaConfig": "projects/reuse-tab/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/reuse-tab/tsconfig.lib.json",
+              "projects/reuse-tab/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ostore-reuse"
 }
