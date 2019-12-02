@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.less"
             ],
             "scripts": []
           },
@@ -89,7 +89,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.less"
             ],
             "scripts": []
           }
@@ -125,7 +125,7 @@
       "projectType": "library",
       "root": "projects/reuse-tab",
       "sourceRoot": "projects/reuse-tab/src",
-      "prefix": "",
+      "prefix": "ostore",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

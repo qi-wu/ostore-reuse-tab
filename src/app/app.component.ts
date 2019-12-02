@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'ostore-reuse';
+
+    excludes = [/^\/(passport).*/];
+    title = 'ostore-reuse';
 }

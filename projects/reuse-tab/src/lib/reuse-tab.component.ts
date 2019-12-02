@@ -38,7 +38,7 @@ import {
 import { ReuseTabService } from './reuse-tab.service';
 
 @Component({
-  selector: 'reuse-tab',
+  selector: 'ostore-reuse-tab',
   exportAs: 'reuseTab',
   templateUrl: './reuse-tab.component.html',
   host: {

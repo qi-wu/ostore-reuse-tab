@@ -1,13 +1,14 @@
 {
   "name": "ostore-reuse",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --o --port 5200",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lib": "ng build reuse-tab"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,8 @@
     "@angular/cli": "~8.3.17",
     "@angular/compiler-cli": "~8.2.13",
     "@angular/language-service": "~8.2.13",
+    "@delon/abc": "^8.6.0",
+    "@delon/chart": "^8.6.0",
     "@delon/theme": "^8.6.0",
     "@delon/util": "^8.6.0",
     "@types/jasmine": "~3.3.8",
